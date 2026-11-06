@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Outer vinyl edge -->
+  <circle cx="32" cy="32" r="30" fill="#0b0d12" stroke="#e9ff2e" stroke-width="3"/>
+  <!-- Grooves -->
+  <circle cx="32" cy="32" r="25" stroke="#1d222e" stroke-width="1.5" stroke-dasharray="6 2"/>
+  <circle cx="32" cy="32" r="21" stroke="#252c3b" stroke-width="1.5"/>
+  <circle cx="32" cy="32" r="17" stroke="#1d222e" stroke-width="1.2" stroke-dasharray="4 2"/>
+  <!-- Center Label -->
+  <circle cx="32" cy="32" r="12" fill="#ff3b24"/>
+  <!-- Center Spindle Hole -->
+  <circle cx="32" cy="32" r="4" fill="#0b0d12" stroke="#ffffff" stroke-width="1.5"/>
+  <!-- Shine reflection -->
+  <path d="M 12 18 A 24 24 0 0 1 28 8 L 32 32 Z" fill="#ffffff" fill-opacity="0.08"/>
+  <path d="M 52 46 A 24 24 0 0 1 36 56 L 32 32 Z" fill="#ffffff" fill-opacity="0.08"/>
+</svg>
