@@ -16,14 +16,14 @@ export default function SetlistDiscProgress({ onOpenSetlist, content }) {
 
       // Determine active section by scroll position
       const sections = [
-        { id: 'contacto', code: 'OUTRO', label: 'Contacto' },
-        { id: 'articulos', code: 'B3', label: 'Artículos' },
-        { id: 'formacion', code: 'B2', label: 'Formación' },
-        { id: 'skills', code: 'B1', label: 'Skills' },
-        { id: 'portafolio', code: 'A3', label: 'Portafolio' },
-        { id: 'trayectoria', code: 'A2', label: 'Trayectoria' },
-        { id: 'previa', code: 'A1', label: 'La previa' },
-        { id: 'inicio', code: 'START', label: 'Intro' }
+        { id: 'contacto', code: 'OUTRO', label: 'CONTACT' },
+        { id: 'articulos', code: 'B3', label: 'IN THE MAKING' },
+        { id: 'formacion', code: 'B2', label: 'EDUCATION' },
+        { id: 'skills', code: 'B1', label: 'SKILLS' },
+        { id: 'portafolio', code: 'A3', label: 'PROJECTS' },
+        { id: 'trayectoria', code: 'A2', label: 'JOURNEY' },
+        { id: 'previa', code: 'A1', label: 'ABOUT' },
+        { id: 'inicio', code: 'START', label: 'HOME' }
       ];
 
       for (const sec of sections) {
@@ -66,6 +66,7 @@ export default function SetlistDiscProgress({ onOpenSetlist, content }) {
       onClick={handleClick}
       aria-label="Abrir setlist"
       title="Click para abrir setlist"
+      className="disc-progress-pill"
       style={{
         position: 'fixed',
         left: '20px',

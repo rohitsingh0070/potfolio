@@ -196,13 +196,12 @@ export default function SectionSkills({ content }) {
           style={{
             position: 'relative',
             width: '100%',
-            height: 'clamp(760px, 84vh, 880px)',
             backgroundColor: '#0b0e15',
             borderRadius: '26px',
             border: '8px dotted rgba(255, 255, 255, 0.08)',
             boxShadow: 'inset 0 0 60px rgba(0, 0, 0, 0.9), 0 24px 50px rgba(0, 0, 0, 0.7)',
             overflow: 'hidden',
-            touchAction: 'none',
+            touchAction: 'pan-y',
             userSelect: 'none',
             backgroundImage: `
               repeating-linear-gradient(0deg, transparent 0 24px, rgba(255, 255, 255, 0.035) 24px 25px),
@@ -246,7 +245,8 @@ export default function SectionSkills({ content }) {
                 style={{
                   left: `${stk.x}px`,
                   top: `${stk.y}px`,
-                  zIndex: stk.zIndex
+                  zIndex: stk.zIndex,
+                  touchAction: 'none'
                 }}
               >
                 {/* Rotated Static Sticker Wrapper */}

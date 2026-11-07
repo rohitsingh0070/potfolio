@@ -28,7 +28,7 @@ export const portfolioData = {
     },
     trayectoria: {
       sectionTag: "A2 · TRAYECTORIA",
-      heading: "BEYOND LEARNING",
+      heading: "What I Do & What Drives Me",
       subheading: "Passionate about technology, innovation, and creativity. I enjoy building intelligent applications, exploring emerging technologies, developing digital experiences, and continuously turning new ideas into meaningful solutions.",
       tracks: [
         {
@@ -345,67 +345,65 @@ export const portfolioData = {
       ]
     },
     articulos: {
-      sectionTag: "B3 · ARTÍCULOS",
-      heading: "LO ÚLTIMO EN MEDIUM · TRES SINGLES, LADO A",
-      subheading: "Reflexiones sobre innovar dentro de las organizaciones sin perder el ritmo ni el flow.",
+      sectionTag: "B3 · ESSAYS & ARTICLES",
+      heading: "UPCOMING & ONGOING PROJECT",
+      subheading: "Exploring new ideas, building intelligent solutions, and turning concepts into reality.",
       singles: [
         {
-          side: "LADO A · 01",
-          rpm: "45 RPM",
-          date: "1 Oct 2026",
-          readTime: "5 min de lectura",
-          title: "El trabajo invisible de innovación: conseguir que otros quieran que tu idea funcione (Episodio III)",
-          tags: ["#innovation", "#corporate", "#change"],
-          color: "#ff3b24",
+          side: "Ongoing",
+          title: "ShayarAI",
+          subheading: "An intelligent platform that creates soulful shayari with natural voice, blending emotions and creativity using advanced AI.",
+          tags: ["#GenAI", "#TTS", "#Creative AI"],
+          color: "#b026ff",
+          bgColor: "#01042d",
+          image: "/portfolio/shayar_ai.jpg",
           url: "https://medium.com/@soy_40480"
         },
         {
-          side: "LADO A · 02",
-          rpm: "45 RPM",
-          date: "26 Ago 2026",
-          readTime: "5 min de lectura",
-          title: "Tener razón no alcanza: Una buena iniciativa también necesita política corporativa (Episodio II)",
-          tags: ["#transformation", "#leadership", "#alignment"],
-          color: "#e9ff2e",
+          side: "Ongoing",
+          title: "Multi-Agent AI System",
+          subheading: "Building a multi-agent system to automate complex tasks using specialized AI agents with intelligent collaboration.",
+          tags: ["#AI Agents", "#LangChain", "#Automation"],
+          color: "#00f0ff",
+          bgColor: "#020b18",
+          image: "/portfolio/multi_agent_ai.jpg",
           url: "https://medium.com/@soy_40480"
         },
         {
-          side: "LADO A · 03",
-          rpm: "45 RPM",
-          date: "25 Ago 2026",
-          readTime: "5 min de lectura",
-          title: "Innovar dentro de una empresa también es aprender a negociar (Episodio I)",
-          tags: ["#strategy", "#negotiation", "#product"],
+          side: "Ongoing",
+          title: "",
+          subheading: "",
+          tags: ["", "", ""],
           color: "#22d3ff",
           url: "https://medium.com/@soy_40480"
         }
       ]
     },
     contacto: {
-      sectionTag: "OUTRO · CONTACTO",
-      heading: "¿ARMAMOS EL PRÓXIMO SET?",
-      subheading: "¿Tienes un problema que nadie ha logrado resolver? ¿Una idea que lleva demasiado tiempo en PowerPoint? ¿Un equipo que necesita cambiar el ritmo? Conversemos.",
+      sectionTag: "OUTRO · CONTACT",
+      heading: "SHALL WE DROP THE NEXT SET?",
+      subheading: "Got a tough problem no one has cracked yet? An idea trapped inside a deck for too long? A squad ready to switch to high tempo? Let's connect.",
       email: "rohitkumar.ds33@gmail.com",
       phone: "9142671893",
-      location: "Disponible en todo el mundo · Remoto & Híbrido",
-      cvLabel: "Descargar CV en PDF",
-      tagWallHeading: "DEJA TU TAG EN EL MURO",
-      tagWallSub: "Escribe tu nombre o firma, elige un color spray y deja tu marca en el set.",
-      tagInputPlaceholder: "Tu alias o tag...",
-      tagButton: "Graffitear Muro",
-      copyToast: "¡Email copiado al portapapeles!"
+      location: "Worldwide · Remote & Hybrid",
+      cvLabel: "Download CV (PDF)",
+      tagWallHeading: "LEAVE YOUR TAG ON THE WALL",
+      tagWallSub: "Type your moniker, pick a neon spray color, and leave your mark on the set.",
+      tagInputPlaceholder: "Your moniker or handle...",
+      tagButton: "Tag the Wall",
+      copyToast: "Email copied to clipboard!"
     },
     nav: {
       setlist: "SETLIST",
       menuItems: [
-        { id: "inicio", label: "Intro", code: "START", desc: "Hey yo, they call me Rohit" },
-        { id: "previa", label: "About", code: "A1", desc: "De la idea al resultado medible" },
-        { id: "trayectoria", label: "Trayectoria", code: "A2", desc: "Seis tracks, dale play a mi historia" },
-        { id: "portafolio", label: "Portafolio", code: "A3", desc: "Lo último en Behance & Labs" },
-        { id: "skills", label: "Skills", code: "B1", desc: "Competencias clave en stickers" },
-        { id: "formacion", label: "Formación", code: "B2", desc: "Diggin' in the crates (discos)" },
-        { id: "articulos", label: "Artículos", code: "B3", desc: "Lo último en Medium (45 RPM)" },
-        { id: "contacto", label: "Contacto", code: "OUTRO", desc: "¿Armamos el próximo set?" }
+        { id: "inicio", label: "HOME", code: "START", desc: "Hey yo, they call me Rohit" },
+        { id: "previa", label: "ABOUT", code: "A1", desc: "From idea to measurable impact" },
+        { id: "trayectoria", label: "JOURNEY", code: "A2", desc: "Six career tracks, hit play" },
+        { id: "portafolio", label: "PROJECTS", code: "A3", desc: "Latest on Behance & Labs" },
+        { id: "skills", label: "SKILLS", code: "B1", desc: "Core skills in draggable stickers" },
+        { id: "formacion", label: "EDUCATION", code: "B2", desc: "Diggin' in the crates (vinyls)" },
+        { id: "articulos", label: "IN THE MAKING", code: "B3", desc: "Upcoming & ongoing projects" },
+        { id: "contacto", label: "CONTACT", code: "OUTRO", desc: "Shall we drop the next set?" }
       ]
     },
     brands: [
@@ -441,8 +439,8 @@ export const portfolioData = {
     },
     trayectoria: {
       sectionTag: "A2 · CAREER TRACKLIST",
-      heading: "SIX TRACKS: HIT PLAY ON MY JOURNEY",
-      subheading: "Every company, project, and challenge has forged how I build. Some tracks were chart-toppers. Others were masterclasses. Hit play.",
+      heading: "What I Do & What Drives Me",
+      subheading: "Passionate about technology, innovation, and creativity. I enjoy building intelligent applications, exploring emerging technologies, developing digital experiences, and continuously turning new ideas into meaningful solutions.",
       tracks: [
         {
           "id": "track-1",
@@ -453,10 +451,10 @@ export const portfolioData = {
           "period": "2026 — Present",
           "location": "Remote / Global",
           "highlights": [
-            "Computer Science graduate passionate about building intelligent, data-driven solutions using ML, Deep Learning, and Generative AI.",
-            "Hands-on expertise developing end-to-end AI applications from research and data preprocessing to model deployment.",
-            "Technical proficiency in Python, Scikit-learn, PyTorch, SQL, LangChain, LangGraph, RAG architectures, and FastAPI.",
-            "Driven to solve real-world problems through data preprocessing, predictive modeling, NLP, and LLM-based applications."
+            "Computer Science graduate passionate about developing intelligent solutions using Machine Learning, Deep Learning, and Generative AI.",
+            "Hands-on experience building AI applications involving document intelligence, predictive modeling, NLP, and Retrieval-Augmented Generation (RAG).",
+            "Technical proficiency in Python, Scikit-learn, PyTorch, SQL, LangChain, LangGraph, FAISS, FastAPI, and LLM technologies.",
+            "Focused on solving real-world challenges through innovative AI solutions, continuous learning, and practical application development."
           ],
           "tags": [
             "Machine Learning",
@@ -470,14 +468,14 @@ export const portfolioData = {
           "code": "A2",
           "color": "#e9ff2e",
           "company": "Building Real Project",
-          "role": "Production Systems, Document Validation & RAG",
+          "role": "Turning Technical Knowledge into Practical Experience",
           "period": "2026 — Present",
           "location": "Projects & Internships",
           "highlights": [
-            "AI-Powered Document Validation System: automated data verification, structural consistency checks, and extraction pipelines.",
-            "Intelligent RAG Knowledge Assistant: conversational Q&A over complex domain corpora with accurate citation retrieval.",
-            "Automated Resume Parsing System: NLP-driven entity extraction, candidate profiling, and automated skill-matching algorithms.",
-            "Engineered production-ready services using FastAPI, vector databases, and modern containerized workflows."
+            "Developed end-to-end AI applications, taking each project from problem definition and data collection through model building, testing, and deployment.",
+            "Built a RAG-based chatbot using LangChain and vector databases that answers questions from custom documents with accurate, context-aware responses.",
+            "Created agentic workflows with LangGraph and exposed trained ML/DL models through FastAPI endpoints, so they can be used in real applications.",
+            "Breaking down complex challenges into manageable tasks through logical thinking and problem-solving."
           ],
           "tags": [
             "RAG Assistant",
@@ -491,14 +489,14 @@ export const portfolioData = {
           "code": "B1",
           "color": "#22d3ff",
           "company": "Problem Solving",
-          "role": "Data Preprocessing, Predictive Modeling & NLP",
+          "role": "Turning Complex Challenges into Practical Solutions",
           "period": "Core Focus",
           "location": "Analytical Engineering",
           "highlights": [
-            "Translating complex ambiguous challenges into structured, measurable data pipelines and machine learning formulations.",
-            "End-to-end data preparation: rigorous cleaning, feature engineering, exploratory data analysis, and normalization.",
-            "Optimizing model performance through iterative evaluation, hyperparameter tuning, and error analysis.",
-            "Solid foundations in algorithms, data structures, and efficient computational problem solving."
+            "Break down complex problems into smaller, manageable steps, starting with understanding the data, defining the goal, and choosing the right approach before writing any code.",
+            "Strong foundation in data structures, algorithms, and statistics, applied to select, optimize, and evaluate models for the task at hand.",
+            "Skilled at debugging and improving model performance through feature engineering, hyperparameter tuning, and error analysis, handling issues like overfitting, imbalanced data, and noisy datasets.",
+            "Comfortable researching new techniques, reading papers and documentation, and quickly adapting tools like PyTorch, LangChain, and LangGraph to solve unfamiliar problems."
           ],
           "tags": [
             "Problem Solving",
@@ -512,14 +510,14 @@ export const portfolioData = {
           "code": "B2",
           "color": "#3dff8a",
           "company": "Exploring Technology",
-          "role": "LangChain, LangGraph, LLMs & Emerging Frameworks",
+          "role": "Staying Curious, Learning Continuously & Embracing Innovation.",
           "period": "Continuous",
           "location": "Continuous Learning",
           "highlights": [
-            "Continuous learner constantly researching emerging AI breakthroughs, agentic architectures, and open-source models.",
-            "Building multi-agent reasoning workflows and stateful graphs with LangGraph and LangChain.",
-            "Experimenting with advanced retrieval techniques: hybrid search, semantic chunking, and cross-encoder rerankers.",
-            "Fast prototyping and iterative experimentation to evaluate practical viability of emerging technologies."
+            "Actively exploring advancements in Artificial Intelligence, Machine Learning, Deep Learning, and Generative AI to understand how emerging technologies are shaping the future.",
+            "Experimenting with modern AI frameworks, LLMs, AI Agents, and automation tools to discover innovative approaches to solving complex technical challenges.",
+            "Continuously learning new programming concepts, frameworks, and development methodologies to strengthen technical expertise and adapt to the evolving technology landscape.",
+            "Turning curiosity into hands-on learning by experimenting with new technologies, testing ideas, and applying acquired knowledge to personal projects."
           ],
           "tags": [
             "LangGraph",
@@ -533,14 +531,14 @@ export const portfolioData = {
           "code": "B3",
           "color": "#ff3d8b",
           "company": "Web Development",
-          "role": "FastAPI, Modern Web Apps & Full-Stack AI",
+          "role": "Creating Responsive, Interactive & User-Friendly",
           "period": "2023 — Present",
           "location": "Full-Stack AI",
           "highlights": [
-            "Designing and implementing high-throughput REST APIs and asynchronous microservices with FastAPI and Python.",
-            "Developing responsive, interactive frontend user interfaces using modern React, component architecture, and CSS.",
-            "Bridging machine learning backends with seamless client-side streaming experiences and state management.",
-            "Managing database schemas, querying relational data with SQL, and integrating vector stores for AI apps."
+            "Build responsive, user-friendly web interfaces using HTML, CSS, and JavaScript to make AI models and tools easy for anyone to use.",
+            "Develop backend APIs with FastAPI (and Python-based frameworks) that connect machine learning models, databases, and front-end applications smoothly.",
+            "Create interactive AI demos and dashboards using tools like Streamlit, Gradio, or React, so projects can be tested and showcased without any technical setup.",
+            "Integrate databases (SQL) and external services, handling authentication, request validation, and error handling to keep applications reliable and ready for real-world use."
           ],
           "tags": [
             "FastAPI",
@@ -554,14 +552,14 @@ export const portfolioData = {
           "code": "B4",
           "color": "#ffb12b",
           "company": "Design & Creativity",
-          "role": "Interactive UI/UX, Visual Thinking & Prototyping",
+          "role": "Combining Creative Thinking with Technology to Build Meaningful",
           "period": "Active",
           "location": "Design & Flow",
           "highlights": [
-            "Harmonizing technical precision with aesthetic creativity: typography, color harmony, and micro-interactions.",
-            "Designing intuitive human-AI interaction flows, conversational interfaces, and clear data visualization dashboards.",
-            "Rapid prototyping from wireframes to high-fidelity interactive digital experiences.",
-            "Emphasizing clean code, accessibility, visual hierarchy, and an unforgettable user experience."
+            "Transforming creative ideas into engaging digital experiences through thoughtful design, innovation, and modern development practices.",
+            "Exploring creative approaches to UI/UX design, layouts, typography, color combinations, and visual storytelling to create attractive interfaces.",
+            "Experimenting with different design concepts, visual elements, and creative tools to develop unique ideas and improve user experiences.",
+            "Applying creative problem-solving to find effective solutions, improve existing designs, and turn complex concepts into simple visual experiences."
           ],
           "tags": [
             "UI/UX Design",
@@ -759,14 +757,14 @@ export const portfolioData = {
     nav: {
       setlist: "SETLIST",
       menuItems: [
-        { id: "inicio", label: "Intro", code: "START", desc: "Hey yo, they call me Rohit" },
-        { id: "previa", label: "About", code: "A1", desc: "From idea to measurable impact" },
-        { id: "trayectoria", label: "Tracklist", code: "A2", desc: "Six career tracks, hit play" },
-        { id: "portafolio", label: "Portfolio", code: "A3", desc: "Latest on Behance & Labs" },
-        { id: "skills", label: "Skills", code: "B1", desc: "Core skills in draggable stickers" },
-        { id: "formacion", label: "Education", code: "B2", desc: "Diggin' in the crates (vinyls)" },
-        { id: "articulos", label: "Articles", code: "B3", desc: "Latest on Medium (45 RPM)" },
-        { id: "contacto", label: "Contact", code: "OUTRO", desc: "Shall we drop the next set?" }
+        { id: "inicio", label: "HOME", code: "START", desc: "Hey yo, they call me Rohit" },
+        { id: "previa", label: "ABOUT", code: "A1", desc: "From idea to measurable impact" },
+        { id: "trayectoria", label: "JOURNEY", code: "A2", desc: "Six career tracks, hit play" },
+        { id: "portafolio", label: "PROJECTS", code: "A3", desc: "Latest on Behance & Labs" },
+        { id: "skills", label: "SKILLS", code: "B1", desc: "Core skills in draggable stickers" },
+        { id: "formacion", label: "EDUCATION", code: "B2", desc: "Diggin' in the crates (vinyls)" },
+        { id: "articulos", label: "IN THE MAKING", code: "B3", desc: "Upcoming & ongoing projects" },
+        { id: "contacto", label: "CONTACT", code: "OUTRO", desc: "Shall we drop the next set?" }
       ]
     },
     brands: [

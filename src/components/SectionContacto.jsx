@@ -63,25 +63,28 @@ export default function SectionContacto({ content }) {
           <h2 className="footer-title">SETLIST</h2>
           <ul>
             <li>
-              <a href="#previa" onClick={handleScroll('previa')}>La previa</a>
+              <a href="#inicio" onClick={handleScroll('inicio')}>HOME</a>
             </li>
             <li>
-              <a href="#trayectoria" onClick={handleScroll('trayectoria')}>Trayectoria</a>
+              <a href="#previa" onClick={handleScroll('previa')}>ABOUT</a>
             </li>
             <li>
-              <a href="#portafolio" onClick={handleScroll('portafolio')}>Portafolio</a>
+              <a href="#trayectoria" onClick={handleScroll('trayectoria')}>JOURNEY</a>
             </li>
             <li>
-              <a href="#skills" onClick={handleScroll('skills')}>Skills</a>
+              <a href="#portafolio" onClick={handleScroll('portafolio')}>PROJECTS</a>
             </li>
             <li>
-              <a href="#formacion" onClick={handleScroll('formacion')}>Formación</a>
+              <a href="#skills" onClick={handleScroll('skills')}>SKILLS</a>
             </li>
             <li>
-              <a href="#articulos" onClick={handleScroll('articulos')}>Artículos</a>
+              <a href="#formacion" onClick={handleScroll('formacion')}>EDUCATION</a>
             </li>
             <li>
-              <a href="#contacto" onClick={handleScroll('contacto')}>Contacto</a>
+              <a href="#articulos" onClick={handleScroll('articulos')}>IN THE MAKING</a>
+            </li>
+            <li>
+              <a href="#contacto" onClick={handleScroll('contacto')}>CONTACT</a>
             </li>
           </ul>
         </nav>

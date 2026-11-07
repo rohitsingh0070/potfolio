@@ -23,6 +23,7 @@ export default function FabTop() {
       onClick={scrollToTop}
       aria-label="Volver arriba"
       title="Volver arriba"
+      className="fab-top-btn"
       style={{
         position: 'fixed',
         right: '20px',

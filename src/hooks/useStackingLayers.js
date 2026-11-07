@@ -21,8 +21,20 @@ export function useStackingLayers() {
     const measureLayers = () => {
       const layers = getLayers();
       const viewportHeight = window.innerHeight;
+      const isMobile = window.innerWidth <= 768;
+
+      if (isMobile) {
+        layers.forEach((layer, idx) => {
+          layer.style.zIndex = String(idx + 1);
+          layer.style.position = 'relative';
+          layer.style.top = '0px';
+          layer.style.setProperty('--dim', '0');
+        });
+        return;
+      }
 
       layers.forEach((layer, idx) => {
+        layer.style.position = 'sticky';
         layer.style.zIndex = String(idx + 1);
 
         // If layer is taller than the viewport, pin it so the bottom finishes scrolling
@@ -38,6 +50,11 @@ export function useStackingLayers() {
     // Update overlay dimming on underlying pinned layers
     const updateDimming = () => {
       const layers = getLayers();
+      if (window.innerWidth <= 768) {
+        layers.forEach((layer) => layer.style.setProperty('--dim', '0'));
+        return;
+      }
+
       const viewportHeight = window.innerHeight;
 
       layers.forEach((layer, idx) => {

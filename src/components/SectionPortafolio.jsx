@@ -39,9 +39,10 @@ export default function SectionPortafolio({ content }) {
         >
           {/* Giant PORTAFOLIO Headline */}
           <h2 
+            className="portfolio-main-heading"
             style={{
               fontFamily: 'var(--f-head)',
-              fontSize: 'clamp(2.8rem, 6.5vw, 5.2rem)',
+              fontSize: 'clamp(2.2rem, 6vw, 5.2rem)',
               letterSpacing: '0.02em',
               lineHeight: 0.95,
               color: '#ffffff',
@@ -56,6 +57,7 @@ export default function SectionPortafolio({ content }) {
 
           {/* Dark Glass Lede Card with sharp corners */}
           <div 
+            className="portfolio-lede-card"
             style={{
               backgroundColor: 'rgba(14, 18, 26, 0.92)',
               backdropFilter: 'blur(12px)',

@@ -35,19 +35,15 @@ export default function Navbar({ lang, setLang, content, onOpenSetlist }) {
     sounds.toggleMute();
   };
 
-  const handleLanguageToggle = (selectedLang) => {
-    sounds.playClick();
-    setLang(selectedLang);
-  };
-
   const navLinks = [
-    { id: 'previa', label: lang === 'es' ? 'LA PREVIA' : 'THE PREVIA' },
-    { id: 'trayectoria', label: lang === 'es' ? 'TRAYECTORIA' : 'TRACKLIST' },
-    { id: 'portafolio', label: lang === 'es' ? 'PORTAFOLIO' : 'PORTFOLIO' },
+    { id: 'inicio', label: 'HOME' },
+    { id: 'previa', label: 'ABOUT' },
+    { id: 'trayectoria', label: 'JOURNEY' },
+    { id: 'portafolio', label: 'PROJECTS' },
     { id: 'skills', label: 'SKILLS' },
-    { id: 'formacion', label: lang === 'es' ? 'FORMACIÓN' : 'EDUCATION' },
-    { id: 'articulos', label: lang === 'es' ? 'ARTÍCULOS' : 'ARTICLES' },
-    { id: 'contacto', label: lang === 'es' ? 'CONTACTO' : 'CONTACT' }
+    { id: 'formacion', label: 'EDUCATION' },
+    { id: 'articulos', label: 'IN THE MAKING' },
+    { id: 'contacto', label: 'CONTACT' }
   ];
 
   return (
@@ -99,7 +95,7 @@ export default function Navbar({ lang, setLang, content, onOpenSetlist }) {
           style={{
             display: 'flex',
             alignItems: 'center',
-            gap: 'clamp(14px, 2vw, 28px)'
+            gap: 'clamp(10px, 1.3vw, 22px)'
           }}
         >
           {navLinks.map((link) => {
@@ -109,35 +105,23 @@ export default function Navbar({ lang, setLang, content, onOpenSetlist }) {
                 key={link.id}
                 href={`#${link.id}`}
                 onClick={() => sounds.playClick()}
-                style={{
-                  position: 'relative',
-                  fontFamily: 'var(--f-mono)',
-                  fontSize: '13px',
-                  fontWeight: 700,
-                  letterSpacing: '0.08em',
-                  color: isActive ? '#ffffff' : 'var(--fog)',
-                  textDecoration: 'none',
-                  textTransform: 'uppercase',
-                  padding: '4px 0',
-                  transition: 'color 0.2s ease'
-                }}
-                onMouseEnter={(e) => { e.currentTarget.style.color = 'var(--yellow)'; }}
-                onMouseLeave={(e) => { e.currentTarget.style.color = isActive ? '#ffffff' : 'var(--fog)'; }}
+                className={`nav-link-anchor ${isActive ? 'active' : ''}`}
               >
                 <span>{link.label}</span>
-                {isActive && (
-                  <span 
-                    style={{
-                      position: 'absolute',
-                      bottom: '-2px',
-                      left: 0,
-                      right: 0,
-                      height: '2px',
-                      backgroundColor: 'var(--yellow)',
-                      borderRadius: '2px'
-                    }} 
+                <svg
+                  className="nav-pink-underline"
+                  viewBox="0 0 100 8"
+                  preserveAspectRatio="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M 2 5.5 C 22 6.8, 45 6.2, 68 3.8 C 82 2.4, 92 3.2, 98 4.2"
+                    fill="none"
+                    stroke="#ff3d8b"
+                    strokeWidth="3.2"
+                    strokeLinecap="round"
                   />
-                )}
+                </svg>
               </a>
             );
           })}
@@ -146,51 +130,6 @@ export default function Navbar({ lang, setLang, content, onOpenSetlist }) {
         {/* Right Topbar Controls */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
           
-          {/* Language Switcher Pill */}
-          <div 
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              padding: '3px',
-              backgroundColor: '#11151f',
-              borderRadius: '999px',
-              border: '1px solid rgba(255, 255, 255, 0.12)'
-            }}
-          >
-            <button
-              onClick={() => handleLanguageToggle('es')}
-              style={{
-                padding: '4px 10px',
-                borderRadius: '999px',
-                fontSize: '11px',
-                fontFamily: 'var(--f-mono)',
-                fontWeight: 800,
-                color: lang === 'es' ? 'var(--ink)' : 'var(--fog)',
-                backgroundColor: lang === 'es' ? 'var(--yellow)' : 'transparent',
-                cursor: 'pointer',
-                transition: 'all 0.2s ease'
-              }}
-            >
-              ES
-            </button>
-            <button
-              onClick={() => handleLanguageToggle('en')}
-              style={{
-                padding: '4px 10px',
-                borderRadius: '999px',
-                fontSize: '11px',
-                fontFamily: 'var(--f-mono)',
-                fontWeight: 800,
-                color: lang === 'en' ? 'var(--ink)' : 'var(--fog)',
-                backgroundColor: lang === 'en' ? 'var(--yellow)' : 'transparent',
-                cursor: 'pointer',
-                transition: 'all 0.2s ease'
-              }}
-            >
-              EN
-            </button>
-          </div>
-
           {/* Sound FX Toggle (Circular icon button) */}
           <button
             onClick={handleMuteToggle}
@@ -220,6 +159,7 @@ export default function Navbar({ lang, setLang, content, onOpenSetlist }) {
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => sounds.playClick()}
+            className="topbar-wa-btn"
             style={{
               display: 'inline-flex',
               alignItems: 'center',
@@ -246,7 +186,7 @@ export default function Navbar({ lang, setLang, content, onOpenSetlist }) {
             }}
           >
             <MessageSquare size={16} strokeWidth={2.4} />
-            <span>WHATSAPP</span>
+            <span className="wa-text">WHATSAPP</span>
           </a>
 
           {/* Mobile Menu Trigger */}
@@ -279,6 +219,7 @@ export default function Navbar({ lang, setLang, content, onOpenSetlist }) {
 
       {/* Awwwards Vertical Ribbon Banner pinned on right edge */}
       <div 
+        className="awwwards-ribbon"
         style={{
           position: 'fixed',
           top: '50%',

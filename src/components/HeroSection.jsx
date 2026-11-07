@@ -55,6 +55,7 @@ export default function HeroSection({ content }) {
 
       {/* Floating Sticker 1: White "ROHIT" peeking behind badge */}
       <div 
+        className="hero-floating-sticker"
         style={{
           position: 'absolute',
           top: '10%',
@@ -77,6 +78,7 @@ export default function HeroSection({ content }) {
 
       {/* Floating Sticker 2: Yellow "14 MVPS" */}
       <div 
+        className="hero-floating-sticker"
         style={{
           position: 'absolute',
           top: '12%',
@@ -100,6 +102,7 @@ export default function HeroSection({ content }) {
 
       {/* Floating Sticker 3: Cyan "DESIGN SPRINT" */}
       <div 
+        className="hero-floating-sticker"
         style={{
           position: 'absolute',
           top: '11%',
@@ -123,6 +126,7 @@ export default function HeroSection({ content }) {
 
       {/* Floating Sticker 4: Red "IA" */}
       <div 
+        className="hero-floating-sticker"
         style={{
           position: 'absolute',
           bottom: '22%',
@@ -192,6 +196,7 @@ export default function HeroSection({ content }) {
             
             {/* The Iconic "HELLO MY NAME IS" Nametag */}
             <div 
+              className="hero-nametag"
               style={{
                 width: 'min(100%, 720px)',
                 borderRadius: '26px',
@@ -315,12 +320,13 @@ export default function HeroSection({ content }) {
             </p>
 
             {/* CTA Buttons Row */}
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '16px', alignItems: 'center' }}>
+            <div className="hero-cta-row" style={{ display: 'flex', flexWrap: 'wrap', gap: '16px', alignItems: 'center' }}>
               
               {/* Yellow Email Button */}
               <a
                 href="mailto:rohitkumar.ds33@gmail.com?subject=Let%27s%20connect"
                 onClick={() => sounds.playClick()}
+                className="hero-cta-btn hero-cta-email"
                 style={{
                   display: 'inline-flex',
                   alignItems: 'center',
@@ -351,6 +357,7 @@ export default function HeroSection({ content }) {
                 target="_blank"
                 rel="noreferrer"
                 onClick={() => sounds.playClick()}
+                className="hero-cta-btn hero-cta-whatsapp"
                 style={{
                   display: 'inline-flex',
                   alignItems: 'center',
@@ -380,7 +387,7 @@ export default function HeroSection({ content }) {
           </div>
 
           {/* Right Column: Polaroid Photo Frame with tape & mini-sticker */}
-          <div style={{ display: 'flex', justifyContent: 'center', position: 'relative' }}>
+          <div className="hero-photo-col" style={{ display: 'flex', justifyContent: 'center', position: 'relative' }}>
             
             <figure 
               className="photo-sticker"
@@ -431,6 +438,7 @@ export default function HeroSection({ content }) {
 
               {/* Pink Overlay Mini-Sticker "LET'S DESIGN FOR REAL PEOPLE" */}
               <span 
+                className="pink-mini-sticker"
                 style={{
                   position: 'absolute',
                   left: '-16px',
@@ -475,6 +483,7 @@ export default function HeroSection({ content }) {
 
         {/* LED 7-Segment Digital Metric Strip below Hero */}
         <div 
+          className="hero-metrics-strip"
           style={{
             marginTop: '70px',
             padding: '24px 36px',
@@ -490,6 +499,7 @@ export default function HeroSection({ content }) {
           {hero.metrics.map((metric, idx) => (
             <div 
               key={idx}
+              className="hero-metric-cell"
               style={{
                 display: 'flex',
                 flexDirection: 'column',

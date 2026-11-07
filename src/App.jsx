@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PersianaIntro from './components/PersianaIntro';
 import Navbar from './components/Navbar';
 import SetlistDrawer from './components/SetlistDrawer';
 import HeroSection from './components/HeroSection';
@@ -40,6 +41,9 @@ export default function App() {
   return (
     <div className="portfolio-app" style={{ minHeight: '100vh', position: 'relative' }}>
       
+      {/* Persiana Roll-up Shutter Intro */}
+      <PersianaIntro />
+
       {/* Navbar Header */}
       <Navbar 
         lang={lang} 
